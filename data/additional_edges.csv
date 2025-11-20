@@ -1,0 +1,21 @@
+from,to,weight,type,description
+main_entrance,visitor_center,79.1,walkway,Welcome pathway
+visitor_center,theater,318.2,walkway,Cultural district access
+theater,art_gallery,35.4,walkway,Arts complex connection
+art_gallery,music_building,35.4,walkway,Creative arts pathway
+music_building,student_center,100.0,walkway,Performance to student services
+chapel,library,70.7,walkway,Quiet zone connection
+library,chapel,70.7,walkway,Contemplative pathway
+observatory,engineering_hall,141.4,walkway,STEM research connection
+science_building,greenhouse,28.3,walkway,Botanical studies access
+greenhouse,health_center,36.1,walkway,Natural health connection
+tennis_courts,dormitory_b,70.7,walkway,Recreation to residence
+soccer_field,tennis_courts,70.7,walkway,Sports complex connection
+track_field,soccer_field,70.7,walkway,Athletic facilities pathway
+track_field,dormitory_b,180.3,walkway,Athletic to residential access
+observatory,dormitory_a,100.0,walkway,Research to residence
+engineering_hall,observatory,141.4,walkway,Engineering to astronomy
+music_building,theater,35.4,walkway,Performance venues connection
+art_gallery,student_center,111.8,walkway,Creative to social hub
+chapel,admin_building,100.0,walkway,Spiritual to administrative
+visitor_center,parking_lot_main,141.4,walkway,Visitor parking access

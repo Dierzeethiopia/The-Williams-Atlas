@@ -1,0 +1,11 @@
+id,name,type,x,y,description
+visitor_center,Visitor Center,services,75,25,Information and campus tours
+theater,University Theater,building,350,50,Performing arts center with 500-seat auditorium
+art_gallery,Art Gallery,building,375,75,Student and faculty art exhibitions
+music_building,Music Building,building,400,100,Practice rooms and performance halls
+chapel,University Chapel,building,100,150,Non-denominational worship space
+observatory,Observatory,building,550,300,Astronomy research and public viewing
+greenhouse,Greenhouse,building,180,380,Botanical research facility
+tennis_courts,Tennis Courts,recreation,650,250,Six outdoor tennis courts
+soccer_field,Soccer Field,recreation,700,200,Regulation soccer field with bleachers
+track_field,Track and Field,recreation,750,150,400-meter track with field events area

@@ -1,0 +1,285 @@
+{
+  "metadata": {
+    "campus_name": "Tech University Campus",
+    "format_version": "1.0",
+    "description": "Main campus layout with buildings, walkways, and key landmarks",
+    "coordinate_system": "meters_from_origin"
+  },
+  "nodes": [
+    {
+      "id": "main_entrance",
+      "name": "Main Entrance",
+      "type": "entrance",
+      "coordinates": [0, 0],
+      "description": "Primary campus entrance with security gate"
+    },
+    {
+      "id": "library",
+      "name": "Central Library",
+      "type": "building",
+      "coordinates": [150, 200],
+      "description": "Five-story library with study rooms and computer labs"
+    },
+    {
+      "id": "student_center",
+      "name": "Student Center",
+      "type": "building",
+      "coordinates": [300, 100],
+      "description": "Student services, dining, and recreational facilities"
+    },
+    {
+      "id": "engineering_hall",
+      "name": "Engineering Hall",
+      "type": "building",
+      "coordinates": [450, 250],
+      "description": "Main engineering building with labs and lecture halls"
+    },
+    {
+      "id": "science_building",
+      "name": "Science Building",
+      "type": "building",
+      "coordinates": [200, 350],
+      "description": "Chemistry, physics, and biology laboratories"
+    },
+    {
+      "id": "admin_building",
+      "name": "Administration Building",
+      "type": "building",
+      "coordinates": [100, 50],
+      "description": "Administrative offices and registrar services"
+    },
+    {
+      "id": "dormitory_a",
+      "name": "Dormitory A",
+      "type": "residence",
+      "coordinates": [500, 400],
+      "description": "Freshman residence hall"
+    },
+    {
+      "id": "dormitory_b",
+      "name": "Dormitory B",
+      "type": "residence",
+      "coordinates": [600, 350],
+      "description": "Upper-class residence hall"
+    },
+    {
+      "id": "gym",
+      "name": "Athletic Center",
+      "type": "recreation",
+      "coordinates": [50, 300],
+      "description": "Gymnasium with fitness center and sports facilities"
+    },
+    {
+      "id": "parking_lot_main",
+      "name": "Main Parking Lot",
+      "type": "parking",
+      "coordinates": [-100, 50],
+      "description": "Primary visitor and staff parking"
+    },
+    {
+      "id": "central_quad",
+      "name": "Central Quad",
+      "type": "landmark",
+      "coordinates": [250, 200],
+      "description": "Main campus quadrangle with benches and trees"
+    },
+    {
+      "id": "food_court",
+      "name": "Food Court",
+      "type": "dining",
+      "coordinates": [320, 120],
+      "description": "Multiple dining options and seating area"
+    },
+    {
+      "id": "computer_lab",
+      "name": "Computer Lab",
+      "type": "building",
+      "coordinates": [400, 150],
+      "description": "24-hour computer access lab"
+    },
+    {
+      "id": "bookstore",
+      "name": "Campus Bookstore",
+      "type": "services",
+      "coordinates": [280, 80],
+      "description": "Textbooks, supplies, and university merchandise"
+    },
+    {
+      "id": "health_center",
+      "name": "Health Center",
+      "type": "services",
+      "coordinates": [150, 400],
+      "description": "Student health services and pharmacy"
+    }
+  ],
+  "edges": [
+    {
+      "from": "main_entrance",
+      "to": "admin_building",
+      "weight": 111.8,
+      "type": "walkway",
+      "description": "Paved walkway from entrance"
+    },
+    {
+      "from": "main_entrance",
+      "to": "parking_lot_main",
+      "weight": 111.8,
+      "type": "walkway",
+      "description": "Direct path to parking"
+    },
+    {
+      "from": "admin_building",
+      "to": "library",
+      "weight": 158.1,
+      "type": "walkway",
+      "description": "Main campus walkway"
+    },
+    {
+      "from": "library",
+      "to": "central_quad",
+      "weight": 141.4,
+      "type": "walkway",
+      "description": "Scenic path through quad"
+    },
+    {
+      "from": "central_quad",
+      "to": "student_center",
+      "weight": 111.8,
+      "type": "walkway",
+      "description": "Direct quad crossing"
+    },
+    {
+      "from": "student_center",
+      "to": "food_court",
+      "weight": 28.3,
+      "type": "indoor",
+      "description": "Internal corridor"
+    },
+    {
+      "from": "student_center",
+      "to": "bookstore",
+      "weight": 36.1,
+      "type": "walkway",
+      "description": "Covered walkway"
+    },
+    {
+      "from": "student_center",
+      "to": "computer_lab",
+      "weight": 111.8,
+      "type": "walkway",
+      "description": "Technology corridor"
+    },
+    {
+      "from": "library",
+      "to": "science_building",
+      "weight": 158.1,
+      "type": "walkway",
+      "description": "Academic pathway"
+    },
+    {
+      "from": "central_quad",
+      "to": "engineering_hall",
+      "weight": 223.6,
+      "type": "walkway",
+      "description": "Main academic pathway"
+    },
+    {
+      "from": "science_building",
+      "to": "engineering_hall",
+      "weight": 282.8,
+      "type": "walkway",
+      "description": "Inter-building connection"
+    },
+    {
+      "from": "engineering_hall",
+      "to": "dormitory_a",
+      "weight": 158.1,
+      "type": "walkway",
+      "description": "Residence pathway"
+    },
+    {
+      "from": "dormitory_a",
+      "to": "dormitory_b",
+      "weight": 111.8,
+      "type": "walkway",
+      "description": "Residence hall connector"
+    },
+    {
+      "from": "gym",
+      "to": "main_entrance",
+      "weight": 316.2,
+      "type": "walkway",
+      "description": "Recreation access path"
+    },
+    {
+      "from": "gym",
+      "to": "science_building",
+      "weight": 158.1,
+      "type": "walkway",
+      "description": "Cross-campus pathway"
+    },
+    {
+      "from": "health_center",
+      "to": "science_building",
+      "weight": 70.7,
+      "type": "walkway",
+      "description": "Health services access"
+    },
+    {
+      "from": "health_center",
+      "to": "dormitory_a",
+      "weight": 360.6,
+      "type": "walkway",
+      "description": "Residence health access"
+    },
+    {
+      "from": "computer_lab",
+      "to": "engineering_hall",
+      "weight": 111.8,
+      "type": "walkway",
+      "description": "Technical building connection"
+    },
+    {
+      "from": "library",
+      "to": "student_center",
+      "weight": 180.3,
+      "type": "walkway",
+      "description": "Student services pathway"
+    },
+    {
+      "from": "admin_building",
+      "to": "student_center",
+      "weight": 223.6,
+      "type": "walkway",
+      "description": "Administrative services path"
+    },
+    {
+      "from": "parking_lot_main",
+      "to": "admin_building",
+      "weight": 200.0,
+      "type": "walkway",
+      "description": "Parking to admin access"
+    },
+    {
+      "from": "dormitory_b",
+      "to": "engineering_hall",
+      "weight": 180.3,
+      "type": "walkway",
+      "description": "Student housing to academics"
+    },
+    {
+      "from": "central_quad",
+      "to": "science_building",
+      "weight": 100.0,
+      "type": "walkway",
+      "description": "Quad to science pathway"
+    },
+    {
+      "from": "bookstore",
+      "to": "library",
+      "weight": 141.4,
+      "type": "walkway",
+      "description": "Services to academic"
+    }
+  ]
+}
